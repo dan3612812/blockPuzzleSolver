@@ -10,21 +10,34 @@ Support rotate a puzzle.
 Support have obstacle in map.
 
 # Usage
+
+Run this command `python src/index.py`.
+
+You can custom them! follow along.
+
 Set the Map and Puzzles in  `main` of `src/index.py`.
 if the puzzle like this
 ```
  ⬛⬛⬛
  ⬛
 ```
-block =1 empty=0 ,the puzzle code is
+block =1 empty=0 in 2d array,the puzzle code is
 ```
 Puzzle([
 [1,1,1]
 [1,0,0]
 ])
 ```
-run this command `python src/index.py`.
 
+Is same with Map. empty=0, obstacle=1.
+
+Then talk the Map and Puzzles to Solutioner.
+```
+Solutioner(map,[puzzleA,puzzleB,...])
+```
+Call `solutioner.solve()` return True when it have answer.
+
+Then call the `solutioner.printAnswer()`to print answer graph.
 
 # TODO
 1. Use bitmask to optimize performance.
