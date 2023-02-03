@@ -1,0 +1,8 @@
+autopep8==2.0.1
+colorama==0.4.6
+pycodestyle==2.10.0
+PySimpleGUI==4.60.4
+rethinkdb==2.4.9
+six==1.16.0
+tomli==2.0.1
+typing==3.7.4.3
