@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Puzzle:
     def __init__(self, twoDArray: List[List[bool]]) -> None:
         '''
@@ -12,6 +13,20 @@ class Puzzle:
         self.__twoD = twoDArray
         # self.solidSquare = False
         self.__check()
+        self.__binary = None
+
+    @property.getter
+    def binary(self):
+        return 
+
+    def covertToBinary(self):
+        n = 0b1
+        for y in self.__twoD:
+            for i in y:
+                n = n << 1
+                n = n | i
+
+        None
 
     def __check(self):
         ySize = 0
@@ -21,13 +36,13 @@ class Puzzle:
             else:
                 if ySize != len(x):
                     raise ValueError("the map format was error")
+
     def isSolidSquare(self):
         #  TODO
         # don't need rotate ,because will same
         #  all points is 1 and x and y is equal
         #  if puzzle is cross also don't need rotate
         return None
-
 
     def __createRotate2D(self):
         new2D = [[None]*self.maxX() for i in range(self.maxY())]

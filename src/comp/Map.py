@@ -74,3 +74,20 @@ class Map:
     def clean(self):
         self.__puzzleId = 1
         self.__map = self.__fixedMap
+    
+    def bitwiseClockwiseRotate(self,):
+        # TODO
+        # [
+        #  [1,0,0],
+        #  [1,1,1]
+        # ]
+        # 2d covert to bit > 100 111
+        # padding zero to puzzle max size =3 > 100 111 000
+        # padding zero to map X size if X=5 > 10000 11100 00000
+        # then clockwise rotate  11000 10000 10000
+        # the formula is [(i mod X)-1]*5+nowPuzzleY-(i\X)
+
+        None
+    
+    def covertToBit(self): 
+        None
